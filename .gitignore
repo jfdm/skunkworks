@@ -1,4 +1,8 @@
+# Misc
+*~
+
 # Idris 2
+_build/
 *.ttc
 *.ttm
 
