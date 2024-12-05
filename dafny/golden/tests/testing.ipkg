@@ -1,0 +1,17 @@
+-- [ Manifest ]
+--
+-- Testing Manifest
+--
+-- Copyright : COPYRIGHT
+-- License   : see ../LICENSE
+--
+--
+package testing
+
+depends = contrib, test
+
+executable = scooby-tests
+
+main = Main
+
+-- [ EOF ]

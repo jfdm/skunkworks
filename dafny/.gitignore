@@ -1,0 +1,5 @@
+*-py
+*-go
+*.runtimeconfig.json
+*.dll
+build
