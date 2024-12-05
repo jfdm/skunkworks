@@ -347,6 +347,14 @@ namespace Edda4
        getX y acc (Source z w) | (No contra) = acc
      getX _ acc _ = acc
 
+     export
+     getY : Elem x xs -> List x -> Edda k xs -> List x
+     getY y acc (Source z w) with (elemEQ y z)
+       getY y acc (Source z w) | (Yes pf) with (prf pf)
+         getY y acc (Source z w) | (Yes pf) | Refl = acc ++ [w]
+       getY y acc (Source z w) | (No contra) = acc
+     getY _ acc _ = acc
+
 --  data Saga : (kind  : Kind)
 --           -> (level : Nat)
 --           -> (type  : Type)
