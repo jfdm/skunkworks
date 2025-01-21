@@ -1,6 +1,6 @@
 # Misc
 *~
-
+__build/
 # Idris 2
 _build/
 *.ttc
