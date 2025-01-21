@@ -12,7 +12,6 @@ TARGET_OUT  := ${PWD}/__build/${TARGET_NAME}
 TARGET      := ${TARGET_OUT}.dll
 
 SOURCES := ${shell ls src/*.dfy}
-MAIN := Main.dfy ConsoleIONative.cs
 OPTS := --target cs -o cs886
 
 # -- [ BUild ]
@@ -64,6 +63,7 @@ cs886-test-update:
 .PHONY: clobber clean
 
 clean:
+	rm -rf __build
 	${MAKE} -C tests clean
 
 clobber: clean
