@@ -1,0 +1,9 @@
+echo "Running Test"
+
+dotnet $1 < input
+
+# Local Variables:
+# mode: sh
+# End:
+
+# -- [ EOF ]

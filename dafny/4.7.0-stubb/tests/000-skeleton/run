@@ -1,0 +1,9 @@
+echo "Running Test"
+
+bash $1
+
+# Local Variables:
+# mode: sh
+# End:
+
+# -- [ EOF ]
